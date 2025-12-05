@@ -1,50 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Nested HTML Tables</title>
-    <style>
-        table, th, td {
-            border: 1px solid black;
-            border-collapse: collapse;
-            padding: 8px;
-        }
-        .black-cell {
-            background-color: black;
-            color: white;
-            font-weight: bold;
-            text-align: center;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>Tables in Tables</title>
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 8px;
+    }
+    .black-cell {
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+    }
+</style>
 </head>
 <body>
 
-<h1>Tables in Tables</h1>
+<h2>Tables in Tables</h2>
 
-<!-- Main Table -->
+<!-- MAIN TABLE -->
 <table>
 
+    <!-- ROW 1 -->
     <tr>
+        <!-- Nested Table 1 -->
         <td>
-            <!-- Nested Table 1 -->
             <table>
                 <tr>
                     <th>Nested Table 1</th>
-                    <th>Column 1</th>
                 </tr>
                 <tr>
                     <td>Row 1</td>
-                    <td>Data 1</td>
                 </tr>
                 <tr>
                     <td>Row 2</td>
-                    <td>Data 2</td>
                 </tr>
             </table>
         </td>
 
+        <!-- Nested Table 2 -->
         <td>
-            <!-- Nested Table 2 -->
             <table>
                 <tr>
                     <th>Nested Table 2</th>
@@ -65,16 +63,15 @@
         </td>
     </tr>
 
+    <!-- ROW 2 -->
     <tr>
+        <!-- Nested Table 3 -->
         <td>
-            <!-- Nested Table 3 with List -->
             <table>
                 <tr>
                     <th>Nested Table 3</th>
-                    <th>Items</th>
                 </tr>
                 <tr>
-                    <td>List</td>
                     <td>
                         <ul>
                             <li>List item 1</li>
@@ -86,16 +83,14 @@
             </table>
         </td>
 
+        <!-- Nested Table 4 -->
         <td>
-            <!-- Nested Table 4 with black cell "HTML" -->
             <table>
                 <tr>
                     <th>Nested Table 4</th>
-                    <th>Column 1</th>
                 </tr>
                 <tr>
                     <td class="black-cell">HTML</td>
-                    <td>Data</td>
                 </tr>
             </table>
         </td>
